@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AluraGeek</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="./assets/logo-alurageek.png" alt="Logo AluraGeek" class="header-logo">
+            </div>
+        </header>
+
+        <main>
+            <section class="products-section">
+                <h1>Mis Productos</h1>
+                <div class="products-container">
+                    <!-- Imagen de ejemplo estática -->
+                    <div class="card">
+                        <img src="./assets/misproductos.png" alt="Mis Productos">
+                        <div class="card-container--info">
+                            <p>Producto de ejemplo</p>
+                            <div class="card-container--value">
+                                <p>$ 00.00</p>
+                                <img src="./assets/trashIcon.png" alt="Eliminar">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Los productos dinámicos se añadirán aquí -->
+                </div>
+            </section>
+            <div class="products-container" data-productos-container>
+                <!-- Aquí se generarán dinámicamente las tarjetas de productos -->
+            </div>
+            <section class="form-section">
+                <h1>Agregar Producto</h1>
+                <form id="product-form" data-product-form>
+                    <input type="text" placeholder="Nombre del producto" required data-input-nombre>
+                    <input type="number" placeholder="Precio" step="0.01" min="0" required data-input-precio>
+                    <input type="url" placeholder="URL de la imagen" required data-input-imagen>
+                    <div class="button-container">
+                        <button type="submit" class="btn-submit">Agregar</button>
+                        <button type="reset" class="btn-reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+            <section class="video-form-section">
+                <h1>Agregar Video</h1>
+                <form id="video-form" data-video-form>
+                    <input type="text" placeholder="Título del video" required data-input-titulo>
+                    <textarea placeholder="Descripción del video" required data-input-descripcion></textarea>
+                    <input type="url" placeholder="URL del video" required data-input-url>
+                    <div class="button-container">
+                        <button type="submit" class="btn-submit">Agregar</button>
+                        <button type="reset" class="btn-reset">Limpiar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <img src="./assets/logo-alurageek.png" alt="Logo AluraGeek" class="footer-logo">
+                <p>Desarrollado por Mauro Agustin Marquez</p>
+                <p>2024 - Proyecto para AluraGeek</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

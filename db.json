@@ -1,0 +1,30 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Producto de ejemplo",
+      "precio": 100.0,
+      "imagen": "./assets/misproductos.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Otro producto",
+      "precio": 200.0,
+      "imagen": "./assets/otroproducto.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "titulo": "Video de ejemplo",
+      "descripcion": "Este es un video de prueba.",
+      "url": "https://www.youtube.com/watch?v=ejemplo"
+    },
+    {
+      "id": 2,
+      "titulo": "Otro video",
+      "descripcion": "Este es otro video de prueba.",
+      "url": "https://www.youtube.com/watch?v=otroejemplo"
+    }
+  ]
+}
